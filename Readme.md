@@ -22,28 +22,30 @@ This repository is designed to evaluate the performance of models for **incremen
             cd incremental-learning-codebase
         ```
     - **Folder Structure**
-        ├── `main_CL.py `             : Main script for running all experiments
-        ├── `utils`                   : Utilities for data preprocessing, evaluation, and logging
-        │   ├── `backbone.py`         : Loads backbone models from the transformers library
-        │   ├── `buffer.py `          : Defines the replay buffer
-        │   ├── `classifier.py `      : Loads Linear/CosineLinear classifiers
-        │   ├── `wrapmodel.py `       : Wraps models for DeepSpeed and accelerate
-        │   ├── `dataformat_preprocess.py `: Preprocesses raw datasets for continual learning
-        │   ├── `dataloader.py `      : Prepares inputs for language models
-        │   ├── `dataset.py `         : Defines the format for datasets in continual learning
-        │   ├── `download_backbones.py `: Downloads models in advance to avoid network issues
-        │   ├── `evaluation.py `      : Defines evaluation processes for tasks
-        │   ├── `factory.py `         : Loads various models from the `models` folder
-        │   ├── `logger.py `          : Defines the logger for experiments
-        │   ├── `metric.py `          : Defines evaluation metrics for continual learning
-        │   ├── `optimizer.py `       : Defines optimizers for different models
-        │   ├── `prompt.py `          : Defines prompts for tasks
-        │   ├── `probing.py `         : Computes probing performance metrics
-        │   └── `config.py `          : Defines general parameters and settings
-        ├── `config `                 : Configuration files for each method and dataset
-        ├── `dataset `             : Stores preprocessed datasets for continual learning
-        ├── `models `                 : Contains model implementations for continual learning
-        └── `experiments`        : Stores logs and checkpoints for each run
+      ```
+        ├── main_CL.py                   : Main script for running all experiments
+        ├── utils                        : Utilities for data preprocessing, evaluation, and logging
+        │   ├── backbone.py              : Loads backbone models from the transformers library
+        │   ├── buffer.py                : Defines the replay buffer
+        │   ├── classifier.py            : Loads Linear/CosineLinear classifiers
+        │   ├── wrapmodel.py             : Wraps models for DeepSpeed and accelerate
+        │   ├── dataformat_preprocess.py : Preprocesses raw datasets for continual learning
+        │   ├── dataloader.py            : Prepares inputs for language models
+        │   ├── dataset.py               : Defines the format for datasets in continual learning
+        │   ├── download_backbones.py    : Downloads models in advance to avoid network issues
+        │   ├── evaluation.py            : Defines evaluation processes for tasks
+        │   ├── factory.py               : Loads various models from the `models` folder
+        │   ├── logger.py                : Defines the logger for experiments
+        │   ├── metric.py                : Defines evaluation metrics for continual learning
+        │   ├── optimizer.py             : Defines optimizers for different models
+        │   ├── prompt.py                : Defines prompts for tasks
+        │   ├── probing.py               : Computes probing performance metrics
+        │   └── config.py                : Defines general parameters and settings
+        ├── config                       : Configuration files for each method and dataset
+        ├── dataset                      : Stores preprocessed datasets for continual learning
+        ├── models                       : Contains model implementations for continual learning
+        └── experiments                  : Stores logs and checkpoints for each run
+      ```
             
     - **Install dependencies:**
         ```bash
@@ -144,9 +146,9 @@ To reproduce the results, follow these steps:
 
 1. Preprocess the dataset `ontonotes5_task6_base8_inc2`.
 2. Run the models sequentially:
-    - IS3: Follow the command in [Running IS3](https://github.com/nikeetan/Incremental_Sequence_labeling/blob/main/README.md#running-is3).
-    - ExtendNER: Follow the command in [Running ExtendNER](https://github.com/nikeetan/Incremental-Sequence-labeling/blob/main/README.md#running-extendner).
-    - OCILNER: Follow the command in [Running OCILNER](https://github.com/nikeetan/Incremental-Sequence-labeling/blob/main/README.md#running-ocilner).
+    - IS3: Follow the command in [Running IS3](https://github.com/nikeetan/Incremental_Sequence_labelling/blob/main/README.md#running-is3).
+    - ExtendNER: Follow the command in [Running ExtendNER](https://github.com/nikeetan/Incremental-Sequence-labelling/blob/main/README.md#running-extendner).
+    - OCILNER: Follow the command in [Running OCILNER](https://github.com/nikeetan/Incremental-Sequence-labelling/blob/main/README.md#running-ocilner).
 3. Compare the task-wise Macro F1 scores for each model.
 
 ---
