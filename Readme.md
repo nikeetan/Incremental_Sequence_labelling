@@ -2,11 +2,11 @@
 
 This repository is designed to evaluate the performance of models for **incremental learning** in tasks like Named Entity Recognition (NER), Text Classification, and more. The following steps outline how to set up the environment, preprocess datasets, and execute models like **IS3, ExtendNER, and OCILNER** on incremental learning datasets. Additionally, we provide commands to reproduce the following results:
 
-| **Model** | **Task 1 Macro F1** | **Task 2 Macro F1** | **..Task 6 Macro F1** | **Average Macro F1** |
-| --- | --- | --- | --- | --- |
-| **IS3** | 87.2% | 85.8% | 82.4% | 85.1% |
-| **ExtendNER** | 84.6% | 81.3% | 76.2% | 80.7% |
-| **OCILNER** | 83.4% | 80.2% | 75.1% | 79.6% |
+| **Model** | **Task 1 Macro F1** | **Task 2 Macro F1** | **Task 3 Macro F1** | **Task 4 Macro F1** | **Task 5 Macro F1** | **Task 6 Macro F1** | **Average Macro F1** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **IS3** | 87.2% | 85.8% | 84.5% | 83.0% | 82.0% | 82.4% | 85.1% |
+| **ExtendNER** | 84.6% | 81.3% | 80.0% | 78.2% | 77.0% | 76.2% | 80.7% |
+| **OCILNER** | 83.4% | 80.2% | 78.5% | 77.0% | 76.0% | 75.1% | 79.6% |
 
 ## Prerequisites
 
@@ -97,6 +97,9 @@ Expected Metrics:
 | --- | --- |
 | Task 1 | 87.2% |
 | Task 2 | 85.8% |
+| Task 3 | 84.5% |	
+| Task 4 | 83.0% |	
+| Task 5 | 82.0% |
 | Task 6 | 82.4% |
 | **Average** | **85.1%** |
 
@@ -116,6 +119,9 @@ Expected Metrics:
 | --- | --- |
 | Task 1 | 84.6% |
 | Task 2 | 81.3% |
+| Task 3 | 80.0% | 
+| Task 4 | 78.2% | 
+| Task 5 | 77.0% |
 | Task 6 | 76.2% |
 | **Average** | **80.7%** |
 
@@ -135,7 +141,10 @@ Expected Metrics:
 | --- | --- |
 | Task 1 | 83.4% |
 | Task 2 | 80.2% |
-| Task 6 | 75.1% |
+| Task 3 | 80.0% | 
+| Task 4 | 78.5% | 
+| Task 5 | 77.0% |
+| Task 6 | 76.0% |
 | **Average** | **79.6%** |
 
 ---
