@@ -147,8 +147,8 @@ To reproduce the results, follow these steps:
 1. Preprocess the dataset `ontonotes5_task6_base8_inc2`.
 2. Run the models sequentially:
     - IS3: Follow the command in [Running IS3](https://github.com/nikeetan/Incremental_Sequence_labelling/blob/main/Readme.md#running-is3).
-    - ExtendNER: Follow the command in [Running ExtendNER](https://github.com/nikeetan/Incremental-Sequence-labelling/blob/main/Readme.md#running-extendner).
-    - OCILNER: Follow the command in [Running OCILNER](https://github.com/nikeetan/Incremental-Sequence-labelling/blob/main/Readme.md#running-ocilner).
+    - ExtendNER: Follow the command in [Running ExtendNER](https://github.com/nikeetan/Incremental_Sequence_labelling/blob/main/Readme.md#running-extendner).
+    - OCILNER: Follow the command in [Running OCILNER](https://github.com/nikeetan/Incremental_Sequence_labelling/blob/main/Readme.md#running-ocilner).
 3. Compare the task-wise Macro F1 scores for each model.
 
 ---
